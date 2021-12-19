@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrintBill" targetNamespace="http://tempuri.org/PrintBill.xsd" xmlns:mstns="http://tempuri.org/PrintBill.xsd" xmlns="http://tempuri.org/PrintBill.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PrintBill" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PrintBill" msprop:Generator_UserDSName="PrintBill">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Food" msprop:Generator_TableClassName="FoodDataTable" msprop:Generator_TableVarName="tableFood" msprop:Generator_TablePropName="Food" msprop:Generator_RowDeletingName="FoodRowDeleting" msprop:Generator_RowChangingName="FoodRowChanging" msprop:Generator_RowEvHandlerName="FoodRowChangeEventHandler" msprop:Generator_RowDeletedName="FoodRowDeleted" msprop:Generator_UserTableName="Food" msprop:Generator_RowChangedName="FoodRowChanged" msprop:Generator_RowEvArgName="FoodRowChangeEvent" msprop:Generator_RowClassName="FoodRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+              <xs:element name="idCategory" msprop:Generator_ColumnVarNameInTable="columnidCategory" msprop:Generator_ColumnPropNameInRow="idCategory" msprop:Generator_ColumnPropNameInTable="idCategoryColumn" msprop:Generator_UserColumnName="idCategory" type="xs:int" minOccurs="0" />
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FoodCategory" msprop:Generator_TableClassName="FoodCategoryDataTable" msprop:Generator_TableVarName="tableFoodCategory" msprop:Generator_TablePropName="FoodCategory" msprop:Generator_RowDeletingName="FoodCategoryRowDeleting" msprop:Generator_RowChangingName="FoodCategoryRowChanging" msprop:Generator_RowEvHandlerName="FoodCategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="FoodCategoryRowDeleted" msprop:Generator_UserTableName="FoodCategory" msprop:Generator_RowChangedName="FoodCategoryRowChanged" msprop:Generator_RowEvArgName="FoodCategoryRowChangeEvent" msprop:Generator_RowClassName="FoodCategoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BillInfo" msprop:Generator_TableClassName="BillInfoDataTable" msprop:Generator_TableVarName="tableBillInfo" msprop:Generator_TablePropName="BillInfo" msprop:Generator_RowDeletingName="BillInfoRowDeleting" msprop:Generator_RowChangingName="BillInfoRowChanging" msprop:Generator_RowEvHandlerName="BillInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="BillInfoRowDeleted" msprop:Generator_UserTableName="BillInfo" msprop:Generator_RowChangedName="BillInfoRowChanged" msprop:Generator_RowEvArgName="BillInfoRowChangeEvent" msprop:Generator_RowClassName="BillInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="idBill" msprop:Generator_ColumnVarNameInTable="columnidBill" msprop:Generator_ColumnPropNameInRow="idBill" msprop:Generator_ColumnPropNameInTable="idBillColumn" msprop:Generator_UserColumnName="idBill" type="xs:int" minOccurs="0" />
+              <xs:element name="idFood" msprop:Generator_ColumnVarNameInTable="columnidFood" msprop:Generator_ColumnPropNameInRow="idFood" msprop:Generator_ColumnPropNameInTable="idFoodColumn" msprop:Generator_UserColumnName="idFood" type="xs:int" minOccurs="0" />
+              <xs:element name="count" msprop:Generator_ColumnVarNameInTable="columncount" msprop:Generator_ColumnPropNameInRow="count" msprop:Generator_ColumnPropNameInTable="countColumn" msprop:Generator_UserColumnName="count" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Bill" msprop:Generator_TableClassName="BillDataTable" msprop:Generator_TableVarName="tableBill" msprop:Generator_TablePropName="Bill" msprop:Generator_RowDeletingName="BillRowDeleting" msprop:Generator_RowChangingName="BillRowChanging" msprop:Generator_RowEvHandlerName="BillRowChangeEventHandler" msprop:Generator_RowDeletedName="BillRowDeleted" msprop:Generator_UserTableName="Bill" msprop:Generator_RowChangedName="BillRowChanged" msprop:Generator_RowEvArgName="BillRowChangeEvent" msprop:Generator_RowClassName="BillRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="DateCheckIn" msprop:Generator_ColumnVarNameInTable="columnDateCheckIn" msprop:Generator_ColumnPropNameInRow="DateCheckIn" msprop:Generator_ColumnPropNameInTable="DateCheckInColumn" msprop:Generator_UserColumnName="DateCheckIn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateCheckOut" msprop:Generator_ColumnVarNameInTable="columnDateCheckOut" msprop:Generator_ColumnPropNameInRow="DateCheckOut" msprop:Generator_ColumnPropNameInTable="DateCheckOutColumn" msprop:Generator_UserColumnName="DateCheckOut" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="idTable" msprop:Generator_ColumnVarNameInTable="columnidTable" msprop:Generator_ColumnPropNameInRow="idTable" msprop:Generator_ColumnPropNameInTable="idTableColumn" msprop:Generator_UserColumnName="idTable" type="xs:int" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" type="xs:int" minOccurs="0" />
+              <xs:element name="discount" msprop:Generator_ColumnVarNameInTable="columndiscount" msprop:Generator_ColumnPropNameInRow="discount" msprop:Generator_ColumnPropNameInTable="discountColumn" msprop:Generator_UserColumnName="discount" type="xs:int" minOccurs="0" />
+              <xs:element name="totalPrice" msprop:Generator_ColumnVarNameInTable="columntotalPrice" msprop:Generator_ColumnPropNameInRow="totalPrice" msprop:Generator_ColumnPropNameInTable="totalPriceColumn" msprop:Generator_UserColumnName="totalPrice" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TableFood" msprop:Generator_TableClassName="TableFoodDataTable" msprop:Generator_TableVarName="tableTableFood" msprop:Generator_TablePropName="TableFood" msprop:Generator_RowDeletingName="TableFoodRowDeleting" msprop:Generator_RowChangingName="TableFoodRowChanging" msprop:Generator_RowEvHandlerName="TableFoodRowChangeEventHandler" msprop:Generator_RowDeletedName="TableFoodRowDeleted" msprop:Generator_UserTableName="TableFood" msprop:Generator_RowChangedName="TableFoodRowChanged" msprop:Generator_RowEvArgName="TableFoodRowChangeEvent" msprop:Generator_RowClassName="TableFoodRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="FoodKey1">
+      <xs:selector xpath=".//mstns:Food" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="FoodCategoryKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FoodCategory" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="BillInfoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BillInfo" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="BillKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Bill" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="TableFoodKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TableFood" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FoodCategory_Food" msdata:parent="FoodCategory" msdata:child="Food" msdata:parentkey="id" msdata:childkey="id" msprop:Generator_UserChildTable="Food" msprop:Generator_ChildPropName="GetFoodRows" msprop:Generator_UserRelationName="FoodCategory_Food" msprop:Generator_RelationVarName="relationFoodCategory_Food" msprop:Generator_UserParentTable="FoodCategory" msprop:Generator_ParentPropName="FoodCategoryRow" />
+      <msdata:Relationship name="Food_BillInfo" msdata:parent="Food" msdata:child="BillInfo" msdata:parentkey="id" msdata:childkey="id" msprop:Generator_UserChildTable="BillInfo" msprop:Generator_ChildPropName="GetBillInfoRows" msprop:Generator_UserRelationName="Food_BillInfo" msprop:Generator_ParentPropName="FoodRow" msprop:Generator_RelationVarName="relationFood_BillInfo" msprop:Generator_UserParentTable="Food" />
+      <msdata:Relationship name="Bill_BillInfo" msdata:parent="Bill" msdata:child="BillInfo" msdata:parentkey="id" msdata:childkey="id" msprop:Generator_UserChildTable="BillInfo" msprop:Generator_ChildPropName="GetBillInfoRows" msprop:Generator_UserRelationName="Bill_BillInfo" msprop:Generator_RelationVarName="relationBill_BillInfo" msprop:Generator_UserParentTable="Bill" msprop:Generator_ParentPropName="BillRow" />
+      <msdata:Relationship name="TableFood_Bill" msdata:parent="TableFood" msdata:child="Bill" msdata:parentkey="id" msdata:childkey="id" msprop:Generator_UserChildTable="Bill" msprop:Generator_ChildPropName="GetBillRows" msprop:Generator_UserRelationName="TableFood_Bill" msprop:Generator_RelationVarName="relationTableFood_Bill" msprop:Generator_UserParentTable="TableFood" msprop:Generator_ParentPropName="TableFoodRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
